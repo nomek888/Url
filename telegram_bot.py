@@ -6,7 +6,14 @@ import re
 import time
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-BOT_TOKEN = '7639447946:AAHzVWhmRA184lRYoQk44T_kyM4anupgx2s'
+# BOT_TOKEN = 'YOUR_BOT_TOKEN' # Old static assignment
+
+BOT_TOKEN = os.environ.get('BOT_TOKEN')
+
+if BOT_TOKEN is None:
+    print("ERROR: BOT_TOKEN environment variable not set.")
+    print("Please set the BOT_TOKEN environment variable with your Telegram Bot token.")
+    exit(1)
 
 DOWNLOAD_FOLDER = "./downloads"
 
