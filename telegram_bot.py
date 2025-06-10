@@ -6,7 +6,7 @@ import re
 import time
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-BOT_TOKEN = 'YOUR_BOT_TOKEN'
+BOT_TOKEN = '7639447946:AAHzVWhmRA184lRYoQk44T_kyM4anupgx2s'
 
 DOWNLOAD_FOLDER = "./downloads"
 
